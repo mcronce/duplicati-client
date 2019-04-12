@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-import arg_parser as ArgumentParser
-import config
 import json
 import os.path
 import sys
 import datetime
 import time
 import yaml
-import compatibility
-import common
-import auth
-import helper
 
 from os.path import expanduser
 from os.path import splitext
-from requests_wrapper import requests_wrapper as requests
 
+import duplicati_client.arg_parser as ArgumentParser
+from duplicati_client import config
+from duplicati_client import compatibility
+from duplicati_client import common
+from duplicati_client import auth
+from duplicati_client import helper
+from duplicati_client.requests_wrapper import requests_wrapper as requests
 
 def main(**args):
     # Command method
