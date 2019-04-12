@@ -1,10 +1,10 @@
 # Module for small helper functions that are mostly generic
-import common
 import datetime
 
 from dateutil import parser as dateparser
 from dateutil import tz
 
+from . import common
 
 # Helper function for formatting timestamps for humans
 def format_time(time_string, precise=False):

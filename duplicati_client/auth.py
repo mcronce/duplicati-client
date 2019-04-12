@@ -1,7 +1,5 @@
 # Module for handling authentication against the Duplicati API
 import base64
-import common
-import compatibility
 import datetime
 import getpass
 import hashlib
@@ -11,7 +9,10 @@ import re
 import sys
 
 from os.path import expanduser
-from requests_wrapper import requests_wrapper as requests
+
+from . import common
+from . import compatibility
+from .requests_wrapper import requests_wrapper as requests
 
 # Allowed alphabet for generating salts
 ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/"

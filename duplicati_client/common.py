@@ -1,14 +1,14 @@
 # Module for common functions used across multiple modules and functions
-import auth
-import config
 import datetime
 import sys
 import os.path
 import yaml
-import compatibility
 
 from dateutil import tz
 
+from . import auth
+from . import compatibility
+from . import config
 
 # Common function for validating that required config fields are present
 def validate_config(data):
