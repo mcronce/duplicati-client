@@ -22,6 +22,7 @@ class Dummy():
 
 # Requests wrapper class
 class requests_wrapper():
+    @staticmethod
     def get(baseurl,
             headers=None,
             cookies=None,
@@ -59,6 +60,7 @@ class requests_wrapper():
             dummy = Dummy()
             return dummy
 
+    @staticmethod
     def delete(baseurl,
                headers=None,
                cookies=None,
@@ -92,6 +94,7 @@ class requests_wrapper():
             dummy = Dummy()
             return dummy
 
+    @staticmethod
     def post(baseurl,
              headers=None,
              cookies=None,
@@ -129,6 +132,7 @@ class requests_wrapper():
             dummy = Dummy()
             return dummy
 
+    @staticmethod
     def put(baseurl,
             headers=None,
             cookies=None,
@@ -166,6 +170,7 @@ class requests_wrapper():
             dummy = Dummy()
             return dummy
 
+    @staticmethod
     def patch(baseurl,
               headers=None,
               cookies=None,
