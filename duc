@@ -274,7 +274,7 @@ def display_status(data):
     message = "Server       : " + common.create_baseurl(data)
     common.log_output(message, True)
 
-    server_activity, backup_id = fetch_progress_state(data)
+    server_activity, backup_id = functions.fetch_progress_state(data)
     message = "Server status: "
     if server_activity.get("OverallProgress", 1) != 1:
         message += server_activity.get("Phase", None)
